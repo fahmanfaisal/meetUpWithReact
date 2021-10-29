@@ -4,12 +4,11 @@ import './App.css';
 import AllMeetUpPage from './pages/AllMeetUp';
 import NewMeetUp from './pages/NewMeetUp';
 import Favourits from './pages/Favourits';
-import MainNavigation from './componets/layout/MainNavigation';
+import Layout from './componets/layout/Layout';
 
 function App() {
   return (
-    <div className="App">
-      <MainNavigation />
+    <Layout>
       <Switch>
       <Route path="/" exact>
         <AllMeetUpPage />
@@ -21,7 +20,7 @@ function App() {
         <Favourits />
       </Route>
       </Switch>
-    </div>
+    </Layout>
   );
 }
 
