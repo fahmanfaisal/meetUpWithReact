@@ -10,7 +10,7 @@ function AllMeetUpPage() {
   useEffect(() => {
     setIsLoading(true);
     fetch(
-      'https://meetup-with-react-default-rtdb.firebaseio.com/meetups.json'
+      'https://newmeetup-2baba-default-rtdb.firebaseio.com/meetups.json'
     )
     .then((response) =>{
       return response.json();
@@ -44,7 +44,7 @@ function AllMeetUpPage() {
   }
     return (
       <section>
-        <h1 style={{textAlign: "center"}}>All MeetUp list</h1>
+        <h1>All MeetUp list</h1>
         <MeetupList meetups={loadedMeetups} />
     </section>
     );

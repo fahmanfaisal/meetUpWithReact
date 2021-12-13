@@ -17,7 +17,6 @@ function MeetupItem(props) {
             <button>To Favourites</button>
         </div>
         </Card>
-
     </li>
     );
 }
